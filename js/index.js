@@ -79,6 +79,15 @@ window.addEventListener('copy', () => {
     alert("Don't steal our content!");
 });
 
+buttonEvent=document.querySelector(".btn");
+buttonEvent.addEventListener('click', (event)=>{
+    buttonEvent.style.backgroundColor="black";
+    event.stopPropagation();
+});
+destinationEvent=document.querySelector('.destination');
+destinationEvent.addEventListener('click', ()=>{
+    destinationEvent.style.backgroundColor="hotpink";
+});
 
 // var vscroll = document.body.scrollTop;
 // console.log(vscroll);
